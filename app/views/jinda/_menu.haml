@@ -4,17 +4,15 @@
     %h1= head
     %h1= "Panel responsive"
     %a{"data-icon" => "bars", "data-iconpos" => "notext", :href => "#nav-panel"}
-      %a{"data-icon" => "gear", "data-iconpos" => "notext", :href => "#add-form"} Add Menu
+    %a{"data-icon" => "gear", "data-iconpos" => "notext", :href => "#add-form"} Add Menu
   .ui-content.jqm-content.jqm-fullwidth{:role => "main"}
+    %h1 Panel responsive
+    %p This is a typical page that has two buttons in the header bar   that open panels. The left panel has the push display mode, the right      panel reveal. To make this responsive, you can make the page re-flow at    wider widths. This allows both the panel menu and page to be used          together when more space is available. This behavior is controlled by CSS  media queries. You can create a custom one for a specific breakpoint or    use the breakpoint preset by adding the <code>class="ui-responsive-        panel"</code> to the page container. We have added this class on this      demo page. Note that when using the preset class, we also hide the         dismiss layer on wider screens if the panel has the push display mode.
 
-  .jqm-demos.ui-responsive-panel{"data-role" => "page", "data-title" => "Panel responsive page", "data-url" => "panel-responsive-page1", :id => "panel-responsive-page1"}
-    %h1= "Panel responsive"
-    %p
-      This is test
     %div{"data-demo-html" => "#panel-responsive-page1"}
-      %br
-      %br
-      %a.ui-btn.ui-shadow.ui-corner-all.ui-mini.ui-btn-inline.ui-icon-carat-l.ui-btn-icon-left.ui-alt-icon.ui-nodisc-icon{"data-ajax" => "false", "data-rel" => "back", :href => "../"} Back
+    %br
+    %br
+    %a.ui-btn.ui-shadow.ui-corner-all.ui-mini.ui-btn-inline.ui-icon-carat-l.ui-btn-icon-left.ui-alt-icon.ui-nodisc-icon{"data-ajax" => "false", "data-rel" => "back", :href => "../"} Back
   -#add-form{"data-display" => "reveal", "data-position" => "right", "data-role" => "panel", "data-theme" => "a"}
   %div{"data-display" => "push", "data-role" => "panel", "data-theme" => "b", :id => "nav-panel"}
     -#%div{"data-role" => "content", "data-id" => "menu_mm"}
@@ -38,3 +36,5 @@
         .login-box
           = link_to image_tag( 'facebook-continue-button.png'), '/auth/facebook', rel: "external", class: "facebook-connect.social-button" 
           = link_to image_tag( 'google-continue-button.png'), '/auth/google_oauth2', rel: "external", class: "google-connect.social-button"
+  %div{"data-display" => "reveal", "data-role" => "panel", "data-theme" => "b", :id => "add-form", "data-position" => "right"}
+    %h1 This is right form
