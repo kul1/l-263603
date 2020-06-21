@@ -8,7 +8,7 @@
   - backbtn= {"data-backbtn"=>"false"}
 = render :partial => "jinda/menu"
 %div{{"data-role" => "page"}.merge(cache) }
-  %div{{"data-role" => "header"}.merge(backbtn)}
+  %div{{"data-role" => "header", "data- position-fixed" => "true"}.merge(backbtn)}
     %h1= @title || DEFAULT_TITLE
     = render :partial => "layouts/jqm/header_switch" 
   %div{"data-role" => "content"}
