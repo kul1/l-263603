@@ -6,6 +6,7 @@
     %a{"data-icon" => "bars", "data-iconpos" => "notext", :href => "#nav-panel"}
     %a{"data-icon" => "gear", "data-iconpos" => "notext", :href => "#add-form"} Add Menu
   .ui-content.jqm-content.jqm-fullwidth{:role => "main"}
+    = yield
     %h1 Panel responsive
     %p This is a typical page that has two buttons in the header bar   that open panels. The left panel has the push display mode, the right      panel reveal. To make this responsive, you can make the page re-flow at    wider widths. This allows both the panel menu and page to be used          together when more space is available. This behavior is controlled by CSS  media queries. You can create a custom one for a specific breakpoint or    use the breakpoint preset by adding the <code>class="ui-responsive-        panel"</code> to the page container. We have added this class on this      demo page. Note that when using the preset class, we also hide the         dismiss layer on wider screens if the panel has the push display mode.
 
